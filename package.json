@@ -1,0 +1,23 @@
+{
+  "name": "lista-de-alunos",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/warley-silva/lista-de-alunos.git"
+  },
+  "author": "Matheus Cruz & Warley Silva",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/warley-silva/lista-de-alunos/issues"
+  },
+  "homepage": "https://github.com/warley-silva/lista-de-alunos#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "sequelize": "^6.28.0"
+  }
+}
