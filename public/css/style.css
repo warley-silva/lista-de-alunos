@@ -170,9 +170,81 @@
     margin: 0px 12px 0px 0px;
 }
 
-/*CSS adicionar novo item*/
+/*CSS adicionar novo item - modal*/
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.4);
+}
 
+.conteudo-modal #formulario {
+    display: flex;
+    flex-direction: column;
+    background-color: #d3d3d3;
+    margin: 15% auto;
+    padding: 35px 15px 20px 15px;
+    border-radius: 8px;
+    width: 450px;
+    height: 450px;
+}
 
+#formulario label {
+    font-family: 'Roboto';
+    font-weight: 600;
+}
+
+#formulario input {
+    height: 35px;
+    border: 1px solid #cfcfcf;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+#formulario input:last-child {
+    margin-bottom: 25px;
+}
+
+.btn-acoes {
+    display: flex;
+    justify-content: end;
+    margin-top: 30px;
+}
+
+.btn-acoes a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 75px;
+    height: 35px;
+    border: 1px solid #cfcfcf;
+    border-radius: 8px;
+    background-color: #3d9db3;
+    color: #ffffff;
+    font-family: 'Roboto';
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.btn-acoes a:hover {
+    background-color: #2e8396;
+}
+
+.btn-acoes a:first-child {
+    margin-right: 10px;
+    background-color: #ef5c63;
+}
+
+.btn-acoes a:first-child:hover {
+    margin-right: 10px;
+    background-color: #e03c44;
+}
 
 /* CSS da tabela */
 .tabela {
