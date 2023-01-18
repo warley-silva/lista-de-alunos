@@ -13,11 +13,13 @@ console.log('Ta funcionando!')
 
 
 
-
+// Codigo do CRUD
 const modal = document.querySelector('.modal-container');
 const tbody = document.querySelector('tbody');
 const sMatAluno = document.querySelector('#mat_aluno');
 const sNomeAluno = document.querySelector('#nome_aluno');
 const sIdadeAluno = document.querySelector('#idade_aluno');
 const sTelAluno = document.querySelector('#tel_aluno');
+
+
 
