@@ -19,27 +19,7 @@
                     <a id="btn-add" href="">Novo</a>
                     <a id="btn-sair" href="/loginProfessores">Sair</a>
                 </div>
-            </div> 
-        </div>
-        
-        <div class="add_novo">
-            <form id="formulario" action="">
-                <label for="mat_aluno">Número da Matrícula</label>
-                <input id="mat_aluno" type="text">
-
-                <label for="nome_aluno">Nome</label>
-                <input id="nome_aluno" type="text">
-
-                <label for="idade_aluno">Idade</label>
-                <input id="idade_aluno" type="number">
-
-                <label for="tel_alun">Telefone</label>
-                <input id="tel_aluno" type="text">
-
-                <label for="status_aluno">Status</label>
-                <input id="status_aluno" type="text">
-                <a id="btn_salvar" href="">Salvar</a>
-            </form>
+            </div>
         </div>
         <div class="tabela">
             <table>
@@ -59,11 +39,32 @@
                 </tbody>
             </table>
         </div>
-        <!--<div class="modal-container">
-            <div class="modal">
-                
-            </div>
-        </div>-->
+        <div id="vis-modal" class="modal">
+            <div class="conteudo-modal">
+                <div class="cabecalho-modal">
+                    <form id="formulario" action="">
+                        <label for="mat_aluno">Número da Matrícula:</label>
+                        <input id="mat_aluno" type="text">
+        
+                        <label for="nome_aluno">Nome:</label>
+                        <input id="nome_aluno" type="text">
+        
+                        <label for="idade_aluno">Idade:</label>
+                        <input id="idade_aluno" type="number">
+        
+                        <label for="tel_alun">Telefone:</label>
+                        <input id="tel_aluno" type="text">
+        
+                        <label for="status_aluno">Status:</label>
+                        <input id="status_aluno" type="text">
+                        <div class="btn-acoes">
+                            <a id="btn_cancelar" href="">Cancelar</a>
+                            <a id="btn_salvar" href="">Salvar</a>
+                        </div>
+                    </form>
+                </div>
+            </div> 
+        </div>
     </section>
     <script src="/js/script.js"></script>
 </body>
