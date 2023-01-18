@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+/*CSS tela Home*/
+.img {
+    background-image: url(/img/1.jpg);
+    width: 65%;
+    height: 100vh;
+}
+
+.area_login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 35%;
+    height: 100vh;
+}
+
+.text {
+    font-family: 'Roboto';
+    font-size: 35px;
+    font-weight: 600;
+    padding-bottom: 15px;
+}
+
+.btn {
+    display: flex;
+    flex-direction: column;
+}
+
+.btn a,
+.aluno_login form a,
+.professores_login a
+ {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.btn a {
+    width: 250px;
+    height: 40px;
+    margin: 15px;
+    border-radius: 8px;
+    border: none;
+    font-family: 'Roboto';
+    font-size: 16px;
+    color: #ffffff;
+    background-color: #3d9db3;
+    cursor: pointer;
+}
+
+.btn a:hover {
+    background-color: #2e8396;
+}
+
+/*CSS tela login de Alunos e Professores*/
+
+.aluno_login,
+.professores_login {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.aluno_login form,
+.professores_login form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    font-family: 'Roboto';
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.erro_ {
+    display: none;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.erro_ span {
+    color: #e50914;
+}
+
+.aluno_login form input,
+.aluno_login form a,
+.professores_login input,
+.professores_login a {
+    margin-bottom: 20px;
+    width: 300px;
+    height: 35px;
+    border: 1px solid #cfcfcf;
+    border-radius: 8px;
+}
+
+.aluno_login form a,
+.professores_login a {
+    background-color: #3d9db3;
+    color: #ffffff;
+    font-family: 'Roboto';
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.aluno_login form a:hover,
+.professores_login a:hover {
+    background-color: #2e8396;
+}
+
+/*CSS da consulta do aluno e ações professores*/
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    width: 1130px;
+    height: 100px;
+}
+
+.header .text_nome span {
+    font-family: 'Roboto';
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.header .acao #btn-sair,
+.header .acao #btn-add {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 75px;
+    height: 35px;
+    border: 1px solid #cfcfcf;
+    border-radius: 8px;
+    background-color: #3d9db3;
+    color: #ffffff;
+    font-family: 'Roboto';
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.header .acao #btn-sair:hover,
+.header .acao #btn-add:hover {
+    background-color: #2e8396;
+}
+
+.acao {
+    display: flex;
+}
+
+.acao a:first-child {
+    margin: 0px 12px 0px 0px;
+}
+
+/* CSS da tabela */
+.tabela {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+thead {
+    background-color: whitesmoke;
+}
+
+.tabela th {
+    font-family: 'Roboto';
+    border: 1px solid #cfcfcf;
+    padding: 0px 20px 0px 20px;
+}
+
+
+/*CSS do modal-container*/
+
+.modal-container {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    z-index: 999;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    background-color: white;
+    border-radius: 10px;
+    width: 50%;
+}
+
+.modal label {
+    font-size: 14px;
+    width: 100%;
+  }
+  
+.modal input {
+    width: 100%;
+    outline: none;
+    padding: 5px 10px; 
+    width: 100%;
+    margin-bottom: 20px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+.modal button {
+    width: 100%;
+    margin: 10px auto;
+    outline: none;
+    border-radius: 20px; 
+    padding: 5px 10px; 
+    width: 100%;
+    border: none;
+    background-color: rgb(57, 57, 226);
+    color: white;
+}
