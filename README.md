@@ -11,8 +11,15 @@ Projeto para a disciplina de Web II.
 ## Instalação
 
 `npm install express ejs express-ejs-layouts sequelize`
-`npm install -g nodemon`
+e `npm install -g nodemon`
 
 ## Rodar o app no terminal
 
 `nodemon server.js`
+
+## No navegador use:
+
+`localhost:8080/home`
+ou
+`127.0.0.1:8080/home`
+
