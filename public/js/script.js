@@ -1,3 +1,4 @@
+
 // Validar campos de login de Alunos e Professores
 const numMat = document.querySelector('#numero_matricula');
 const senha = document.querySelector('#senha_aluno');
@@ -5,16 +6,35 @@ const submitErro = document.querySelector('.erro_');
 const prof = document.querySelector('#prof');
 const aluno = document.querySelector('#aluno');
 
-console.log('Ta funcionando!')
+// Menu modal
+const btnNovo = document.querySelector('#btn-add');
+const btnCancelar = document.querySelector('#btn_cancelar');
+const btnSalvar = document.querySelector('#btn_salvar');
+const mostrarConteudoModal = document.querySelector('.modal');
+
+btnNovo.addEventListener('click', e => {
+   //e.preventDefault();
+    mostrarConteudoModal.style.diplay = 'block'
+});
+
+btnCancelar.addEventListener('click', fecharModal => {
+    if(mostrarConteudoModal.style.display == 'block') {
+        mostrarConteudoModal.style.display = 'none';
+    }
+})
+
+// function abrirModal() {
+    
+// }
 
 
 
-
+//
 
 
 
 // Codigo do CRUD
-const modal = document.querySelector('.modal-container');
+//const modal = document.querySelector('.modal-container');
 const tbody = document.querySelector('tbody');
 const sMatAluno = document.querySelector('#mat_aluno');
 const sNomeAluno = document.querySelector('#nome_aluno');
