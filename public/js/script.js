@@ -12,15 +12,14 @@ const btnCancelar = document.querySelector('#btn_cancelar');
 const btnSalvar = document.querySelector('#btn_salvar');
 const mostrarConteudoModal = document.querySelector('.modal');
 
-btnNovo.addEventListener('click', e => {
-   //e.preventDefault();
-    mostrarConteudoModal.style.diplay = 'block'
+btnNovo.addEventListener('click', abrirModal => {
+    abrirModal.preventDefault();
+    mostrarConteudoModal.style.display = 'block';
 });
 
 btnCancelar.addEventListener('click', fecharModal => {
-    if(mostrarConteudoModal.style.display == 'block') {
-        mostrarConteudoModal.style.display = 'none';
-    }
+    fecharModal.preventDefault();
+    mostrarConteudoModal.style.display = 'none'
 })
 
 // function abrirModal() {
